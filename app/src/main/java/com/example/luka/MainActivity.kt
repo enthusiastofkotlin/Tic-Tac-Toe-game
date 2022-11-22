@@ -95,13 +95,13 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             activePlayer = player2
             tv.setText("Player-2 Turn")
             btnClicked.setTextColor(Color.BLACK)
-            btnClicked.backgroundTintList = getColorStateList(R.color.yellow)
+            btnClicked.backgroundTintList = getColorStateList(R.color.pink)
         }else{
             btnClicked.setText("X")
             activePlayer = player1
             tv.setText("Player-1 Turn")
             btnClicked.setTextColor(Color.BLACK)
-            btnClicked.backgroundTintList = getColorStateList(R.color.orange)
+            btnClicked.backgroundTintList = getColorStateList(R.color.lightblue)
         }
 
         checkForWin()

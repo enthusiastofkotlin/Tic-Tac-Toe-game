@@ -39,17 +39,6 @@
 
         >
 
-        <TextView
-            android:id="@+id/pirveli"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="0"
-            android:textSize="20dp"
-            android:textColor="@color/black"
-            android:layout_marginRight="50dp" >
-
-
-        </TextView>
 
 
 
@@ -63,26 +52,21 @@
 
         </TextView>
 
-<TextView
-    android:id="@+id/meore"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="0"
-    android:textSize="20dp"
-    android:textColor="@color/black"
-    android:layout_marginLeft="50dp">
-
-</TextView>
 
 
     </LinearLayout>
 
+
     <LinearLayout
+        android:id="@+id/lineari"
         app:layout_constraintTop_toBottomOf="@id/saxeli2"
         android:layout_width="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         android:layout_height="match_parent"
+        android:layout_marginBottom="30dp"
         android:orientation="vertical"
         tools:ignore="MissingConstraints"
+
         android:layout_marginTop="100dp"
         android:gravity="center"
         >
@@ -235,7 +219,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_margin="15dp">
+            android:layout_marginTop="5dp">
             <TextView
                 android:id="@+id/reset"
                 android:layout_width="wrap_content"
@@ -247,6 +231,43 @@
                 android:background="@color/red">
 
             </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/angarishi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/lineari"
+
+
+            >
+
+            <TextView
+                android:id="@+id/pirveli"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_marginRight="50dp" >
+
+
+            </TextView>
+
+
+            <TextView
+                android:id="@+id/meore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="50dp">
+
+            </TextView>
+
 
         </LinearLayout>
 
